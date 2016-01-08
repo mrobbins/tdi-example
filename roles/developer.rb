@@ -3,8 +3,8 @@ description "developer role"
 run_list(
   "recipe[TDI]",
   "recipe[git]",
-  "recipe[chruby::system]",
-  "recipe[virtualbox]"
+  "recipe[chruby::system]" #,
+#  "recipe[virtualbox]"
 )
 
 default_attributes(
@@ -12,9 +12,9 @@ default_attributes(
     "rubies" => {
       "1.9.3-p392" => false,
       "1.9.3-p484" => false,
-      "2.2.1" => true
+      "2.3.0" => true
     },
 #    "default" => "1.9.3-p484"
-     "default" => "2.2.1"
+     "default" => "2.3.0"
   }
 )
