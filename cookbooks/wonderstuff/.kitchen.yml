@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["forwarded_port", {guest: 80, host: 8080}]
+    - ["public_network", {bridge: "en0: Wi-Fi (AirPort)"}]
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+#  - name: centos/7
+#  -name: trusty64
+
+
+suites:
+  - name: default
+    run_list:
+      - recipe[wonderstuff::default]
+    attributes:

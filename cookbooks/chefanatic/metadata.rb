@@ -1,0 +1,7 @@
+name             'chefanatic'
+maintainer       'michael robbins'
+maintainer_email 'mrobbins@fanatics.com'
+license          'Apache 2.0'
+description      'Installs/Configures chefanatic'
+long_description 'Installs/Configures chefanatic'
+version          '0.1.0'

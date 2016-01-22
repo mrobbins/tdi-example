@@ -1,0 +1,22 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+
+# Uncomment these lines if you want to live on the Edge:
+#
+# group :development do
+#   gem "berkshelf", github: "berkshelf/berkshelf"
+#   gem "vagrant", github: "mitchellh/vagrant", tag: "v1.6.3"
+# end
+#
+# group :plugins do
+#   gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
+#   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
+# end
+
+gem 'psych', '2.0.5', :group => :integration¬
+gem 'test-kitchen',  :group => :integration¬
+gem 'kitchen-vagrant', '0.15.0',  :group => :integration¬
+#gem 'cucumber', :group => :integration¬
+gem 'rspec-expectations', :group => :integration¬
+#gem 'leibniz', '0.2.1',  :group => :integration¬

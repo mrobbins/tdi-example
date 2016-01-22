@@ -1,0 +1,7 @@
+name             'wonderstuff'
+maintainer       'michael robbins'
+maintainer_email 'mrobbins@fanatics.com'
+license          'Apache 2.0'
+description      'Installs/Configures wonderstuff'
+long_description 'Installs/Configures wonderstuff'
+version          '1.1.0'

@@ -1,0 +1,28 @@
+User "<%= node['pound']['user'] %>"
+Group "<%= node['pound']['group'] %>"
+Control "<%= node['pound']['control'] %>"
+
+ListenHTTP
+  Address 0.0.0.0
+  Port <%= node['pound']['port'] %>
+End
+
+<% if node['pound']['ssl']['enabled'] %>
+ListenHTTPS
+  Address 0.0.0.0
+  Port <%= node['pound']['ssl']['port'] %>
+  Cert  "<%= node['pound']['ssl']['cert'] %>
+End
+<% end %>
+
+Service
+  Backend 
+    Address 127.0.0.1
+    Port 8000
+  End
+
+  Backend
+    Address 127.0.0.1
+    Port 8001
+  End
+End

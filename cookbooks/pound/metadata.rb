@@ -1,0 +1,8 @@
+name             'pound'
+maintainer       'michael robbins'
+maintainer_email 'mrobbins@fanatics.com'
+license          'Apache 2.0'
+description      'Installs/Configures pound'
+long_description 'Installs/Configures pound'
+version          '0.1.0'
+depends          'yum-epel'
